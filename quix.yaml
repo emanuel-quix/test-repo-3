@@ -47,14 +47,14 @@ topics:
   - name: my-topic
     persisted: false
     configuration:
-      partitions: 2
+      partitions: 3
       replicationFactor: 2
       retentionInMinutes: 60
       retentionInBytes: 52428800
   - name: my-topic3
     persisted: false
     configuration:
-      partitions: 2
+      partitions: 3
       replicationFactor: 2
       retentionInMinutes: 60
       retentionInBytes: 52428800
