@@ -17,7 +17,7 @@ deployments:
     variables:
       - name: Topic
         inputType: OutputTopic
-        description: Name of the output topic 4 to write into
+        description: Name of the output topic to write into
         required: true
         value: f1-data
   - name: Demo Data 2
@@ -38,7 +38,7 @@ deployments:
 # This section describes the Topics of the data pipeline
 topics:
   - name: my-topic3
-    persisted: false
+    persisted: true
     configuration:
       partitions: 2
       replicationFactor: 2
@@ -59,7 +59,7 @@ topics:
       retentionInMinutes: 60
       retentionInBytes: 52428800
   - name: f1-data
-    persisted: true
+    persisted: false
     configuration:
       partitions: 2
       replicationFactor: 2
