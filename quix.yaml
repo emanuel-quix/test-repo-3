@@ -31,7 +31,7 @@ deployments:
     variables:
       - name: Topic
         inputType: OutputTopic
-        description: Name 3 of the output topic to write into
+        description: Name 5 of the output topic to write into
         required: true
         value: f1-data
 
