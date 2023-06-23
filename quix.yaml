@@ -32,7 +32,7 @@ deployments:
       - name: Topic
         inputType: OutputTopic
         description: Name 2 of the output topic to write into
-        required: true
+        required: false
         value: f1-data
 
 # This section describes the Topics of the data pipeline
@@ -40,7 +40,7 @@ topics:
   - name: my-topic3
     persisted: true
     configuration:
-      partitions: 5
+      partitions: 6
       replicationFactor: 2
       retentionInMinutes: 60
       retentionInBytes: 52428800
