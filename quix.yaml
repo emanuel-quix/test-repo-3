@@ -40,14 +40,14 @@ topics:
   - name: my-topic3
     persisted: true
     configuration:
-      partitions: 6
+      partitions: 5
       replicationFactor: 2
       retentionInMinutes: 30
       retentionInBytes: 52428800
   - name: my-topic
     persisted: false
     configuration:
-      partitions: 4
+      partitions: 7
       replicationFactor: 5
       retentionInMinutes: 60
       retentionInBytes: 52428800
