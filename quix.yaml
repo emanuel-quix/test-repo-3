@@ -62,7 +62,7 @@ topics:
     persisted: true
     configuration:
       partitions: 4
-      replicationFactor: 2
+      replicationFactor: 3
       retentionInMinutes: -1
       retentionInBytes: 262144000
   - name: f1-data-2
