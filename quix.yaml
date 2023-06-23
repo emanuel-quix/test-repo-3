@@ -68,7 +68,7 @@ topics:
   - name: f1-data-2
     persisted: false
     configuration:
-      partitions: 5
+      partitions: 6
       replicationFactor: 2
       retentionInMinutes: -1
       retentionInBytes: 262144000
