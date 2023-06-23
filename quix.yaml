@@ -48,7 +48,7 @@ topics:
     persisted: false
     configuration:
       partitions: 4
-      replicationFactor: 2
+      replicationFactor: 4
       retentionInMinutes: 60
       retentionInBytes: 52428800
   - name: my-topic-2
