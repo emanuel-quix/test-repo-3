@@ -40,7 +40,7 @@ topics:
   - name: my-topic3
     persisted: true
     configuration:
-      partitions: 6
+      partitions: 10
       replicationFactor: 5
       retentionInMinutes: 60
       retentionInBytes: 52428800
@@ -68,7 +68,7 @@ topics:
   - name: f1-data-2
     persisted: false
     configuration:
-      partitions: 30
+      partitions: 2
       replicationFactor: 2
       retentionInMinutes: -1
       retentionInBytes: 262144000
