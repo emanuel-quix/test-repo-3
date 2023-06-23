@@ -13,7 +13,7 @@ deployments:
       memory: {{ memory }}
       replicas: {{ replicas }}
     libraryItemId: 7abe02e1-1e75-4783-864c-46b930b42afe
-    desiredStatus: Stopped
+    desiredStatus: Running
     variables:
       - name: Topic
         inputType: OutputTopic
@@ -32,7 +32,7 @@ deployments:
       - name: Topic
         inputType: OutputTopic
         description: Name 2 of the output topic to write into
-        required: false
+        required: true
         value: f1-data
 
 # This section describes the Topics of the data pipeline
@@ -40,8 +40,8 @@ topics:
   - name: my-topic3
     persisted: true
     configuration:
-      partitions: 10
-      replicationFactor: 5
+      partitions: 5
+      replicationFactor: 2
       retentionInMinutes: 60
       retentionInBytes: 52428800
   - name: my-topic
@@ -54,12 +54,12 @@ topics:
   - name: my-topic-2
     persisted: false
     configuration:
-      partitions: 10
-      replicationFactor: 3
+      partitions: 5
+      replicationFactor: 2
       retentionInMinutes: 60
       retentionInBytes: 52428800
   - name: f1-data
-    persisted: false
+    persisted: true
     configuration:
       partitions: 3
       replicationFactor: 2
