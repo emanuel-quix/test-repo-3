@@ -18,7 +18,7 @@ deployments:
       - name: Topic
         inputType: OutputTopic
         description: Name of the output topic to write into
-        required: false
+        required: true
         value: f1-data
   - name: Demo Data 2
     deploymentType: Service
