@@ -1,4 +1,8 @@
+<<<<<<< refs/remotes/origin/main
 # Quix Project Descriptor26
+=======
+# Quix Project Descriptor27
+>>>>>>> editing quix.yaml using git service
 # This file describes the data pipeline and configuration of resources of a Quix Project.
 
 metadata:
