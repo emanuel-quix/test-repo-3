@@ -1,3 +1,3 @@
 # test-repo-3
 
-potato
+potato2
